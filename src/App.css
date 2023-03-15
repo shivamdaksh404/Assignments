@@ -1,16 +1,13 @@
-.App {
-  text-align: center;
+.container{
+align-items: center;
 }
-.taskList{
-  text-align: center;
-  gap: 30px;
-  width: fit-content;
-  margin: auto;
-  display: flex;
-  margin-top:10px ;
-  margin-bottom:10px;
-  border: 0.4px solid;
+
+.input-part{
+
+
 }
- .task{
-  
- }
+
+.Single-data{
+
+
+}
