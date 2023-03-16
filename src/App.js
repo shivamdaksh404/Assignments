@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { Fragment, useState } from 'react';
+import './App.css'
 
 export default function App() {
   const [task, setTask] = useState([]);
   const [value, setValue] = useState('');
   const [count, setCount] = useState(0);
-  
+
   function handleChange(event) {
     setValue(event.target.value);
     // console.log(event.target.value);
@@ -49,30 +50,32 @@ export default function App() {
   };
 
   return (
-    <div className='container'>
-      <h1>Pending Task({count})</h1>
-      <div>
-        {task.map((ele, index) => (
-          <div key={index} className='Single-data'>
-            {ele.status ? (
-              <p>
-                <strike> {ele.title}</strike>{' '}
-              </p>
-            ) : (
-              <p> {ele.title} </p>
-            )}
-            <div>
-              <button onClick={() => taskCompleted(ele.id)}>Completed</button>
-              <button className={"icon"} onClick={() => deleteTask(ele.id)}>X</button>
+    <Fragment>
+      <div className='container'>
+        <h1>Pending Task({count})</h1>
+        <div>
+          {task.map((ele, index) => (
+            <div key={index} className='Single-data'>
+              {ele.status ? (
+                <p>
+                  <strike> {ele.title}</strike>{' '}
+                </p>
+              ) : (
+                <p> {ele.title} </p>
+              )}
+              <div>
+                <button  className="complete-button" onClick={() => taskCompleted(ele.id)}>Completed</button>
+                <button className={"icon"} onClick={() => deleteTask(ele.id)}>X</button>
+              </div>
             </div>
-          </div>
-        ))}
-      </div >
-      <div className="input-part">
-      <input value={value} placeholder="Add New Task" onChange={handleChange} />
-      <button onClick={handleSubmit}>submit</button>
-      {/* <GiCancel/> */}
+          ))}
+        </div >
+        <div className="input-part">
+          <input className='input-button' value={value} placeholder="Add New Task" onChange={handleChange} />
+          <button className='submit-button' onClick={handleSubmit}>submit</button>
+          {/* <GiCancel/> */}
+        </div>
       </div>
-    </div>
+    </Fragment>
   );
 }
