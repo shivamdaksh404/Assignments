@@ -1,0 +1,19 @@
+.input-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 500px;
+    flex-direction: column;
+  }
+  .Input{
+    height: 250px;
+    width: 500px; 
+    cursor: initial  
+  }
+  
+  .error{
+  top:0.5rem;
+  color: red;
+  
+  }
+  

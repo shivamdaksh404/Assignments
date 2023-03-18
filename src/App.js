@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import { ImageChange } from './Assignment-1-Components/ImageChange';
+import { Fragment } from 'react';
+import InputField from './Assignment-2-components/InputField';
+import From from './Assignment-3-Components/From';
+
 
 function App() {
+
+
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <div className="App">
+        <ImageChange />
+        <InputField />
+        <From />
+      </div>
+    </Fragment>
   );
 }
 
