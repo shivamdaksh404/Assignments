@@ -1,0 +1,10 @@
+.heading{
+    background-color: rgb(31, 83, 72);
+    height: 100vh;
+    margin: 0px;
+    color: white;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}

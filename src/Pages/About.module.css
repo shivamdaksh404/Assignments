@@ -1,0 +1,122 @@
+.headingDiv {
+margin: 1em ;
+border-right: 1px gray;
+}
+.headingDiv > h1 {
+    border-right: 1px solid gray;
+    padding-right: 0.5em;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-left: 3em;
+}
+/* .headingDiv > h2 > span{
+    opacity: 0;
+    display: inline-block;
+    animation: animate 1s linear forwards;
+    -webkit-animation: animate 1s linear forwards;
+
+} */
+.mainContainer{
+    display: flex; align-items: flex-start; 
+}
+.profile{
+    margin: 1em;
+}
+.profile > span {
+color: #2f00ff;
+display: flex;
+justify-content: center;
+font-weight: 600;
+}
+.profilePhoto{
+    height: 15em;
+    width: 15em;
+    border: solid 1px ;
+border-radius: 2em;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between ;
+    height: 50vh;
+    width: 80vw;
+
+}
+.aboutMe{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+
+}
+.myDetails{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2em;
+    width: 80%;
+}
+.myDetails > div {
+    display: flex;
+    background-color: skyblue;
+    height: 100%;
+    width: 17em;
+    gap: 2em;
+    border: 1px solid;
+    width: 80%;
+    /* flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+*/
+}
+ 
+@media screen and (max-width:640px) {
+    .mainContainer{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+.headingDiv > h1{
+    border: none;
+    border-bottom: solid 2px gray;
+    padding: 0px;
+    font-size: 1.5em;
+}
+.headingDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+.profilePhoto{
+    height: 9em;
+    width: 9em;
+}
+.profile > span {
+    font-size: small;
+}
+.myDetails{
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    width: 100%;
+}
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+}
+@media screen and (max-width:1000px) {
+    .myDetails{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: stretch;
+    }
+}

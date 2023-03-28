@@ -1,0 +1,28 @@
+.navBar{
+    gap: 1.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: cadetblue;
+    height: 3em;
+    /* border: solid 0.1em #4a4a4a; */
+    /* border-radius: 2em; */
+    justify-content: flex-end;
+}
+.userIcon{
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    /* border: solid 2px black; */
+    margin-right: 2em;
+    margin-left: 2em;
+}
+@media screen and (max-width: 640px){
+    .navBar{
+
+    }
+    .userIcon{
+        
+    }
+    
+}
