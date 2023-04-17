@@ -1,0 +1,85 @@
+
+.main{
+      display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    justify-content: center;
+    align-items: center; 
+}
+.costumerDiv{ 
+    border: 1px solid;
+    padding: 10px
+    
+}
+
+.itemListDiv{
+    border: 1px solid;
+    padding: 7px 10px 13px 10px;
+    margin: 15px 0px 10px 0px;
+}
+.from{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px; 
+    margin: 10px;
+
+}
+    .nameInput{
+        padding: 5px;
+        
+    }
+    
+    
+    .inputDiv{
+        margin: 10px;
+        
+    }
+    
+    .divContainer{
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+        
+        
+    }
+    
+    
+    .createBillBtn{
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 10px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .createBillBtn:hover{
+        font-size: medium;
+        font-weight: 700;
+        background:rgb(83, 201, 29);
+        color: white;
+        animation: alternate;
+    }
+    
+    .billBox{
+        background-color: white;
+    }
+    .sumDiv{
+        
+        
+    }
+    table, th, td{
+        border: 1px solid;
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th{
+        height: 30px;
+        width: 100px;
+        text-align: left;
+    }
+    td{
+        height: 30px;
+        width: 100px;
+        text-align: left;
+    }
+  
